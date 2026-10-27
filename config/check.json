@@ -1,0 +1,11 @@
+{
+  "site_url": "http://127.0.0.1:8765/index.html",
+  "frames": ["#outer-frame", "#attendance-frame"],
+  "table": "#attendance-table",
+  "rows": "tbody tr",
+  "columns": ["employee", "date", "scheduled_end", "clock_in", "clock_out", "overtime_start"],
+  "rules": {
+    "missing_clock_out": true,
+    "overtime_must_not_start_before_scheduled_end": true
+  }
+}
